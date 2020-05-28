@@ -39,11 +39,18 @@
                                 <state key="normal" title="Roll">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="rollButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u9h-MO-r8y"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="diceImage2" destination="31H-o3-kAb" id="NKP-Dm-CqJ"/>
+                        <outlet property="diceImageView1" destination="oG6-Za-b73" id="vb0-Ex-mIi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

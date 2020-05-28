@@ -23,11 +23,13 @@ class ViewController: UIViewController {
 
     @IBAction func rollButtonClicked(_ sender: UIButton)
 {
-    diceImageView1.image = [#imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")][leftdice]
-    diceImage2.image = [#imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")][rightdice]
+    diceImageView1.image = [#imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")] [Int.random(in: 0...5)]
+        diceImage2.image = [#imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")][Int.random(in: 0...5)]
     
     leftdice = leftdice + 1
     rightdice = rightdice - 1
+    
+    
 
     }
 }
